@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter App</title>
+
+    <link rel="stylesheet" href="./main.css">
+</head>
+
+<body>
+<!-- wrapper -->
+<div class="h-[100vh] w-[100vw] bg-blue-900 flex flex-col justify-center items-center gap-10">
+
+    <div class="text-blue-400 font-bold text-[20px]">Increment And Decrement</div>
+
+<!-- content -->
+<div class="flex justify-evenly items-center h-[50px] w-[200px] bg-white text-[25px rounded-sm]">
+    
+    
+<!-- Negative Button -->
+    <button onclick="decrement()" class="font-bold border-r-2 border-[#bfbfbf] pr-8 ">
+        <i class="fa-solid fa-minus hover:scale-150 duration-200"></i>
+    </button>
+
+    <div id="counter" class="font-bold">0</div>
+
+
+<!-- Positive button -->
+    <button onclick="increment()" class="font-bold border-l-2 border-[#bfbfbf] pl-8 ">
+        <i class="fa-solid fa-plus  hover:scale-150 duration-200"></i>
+    </button>
+
+    
+
+
+
+</div>
+<div>
+    <button id="reset" class="bg-white h-[30px] w-[80px] rounded-sm font-bold tracking-wide hover:scale-110 duration-200">
+        Reset
+    </button>
+</div>
+
+</div>
+<script src="https://kit.fontawesome.com/58a810656e.js" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+
+</html>
+
